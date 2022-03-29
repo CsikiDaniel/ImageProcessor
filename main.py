@@ -20,6 +20,17 @@ while is_processing:
 
     image = computerVision.find_contours(image)
 
+    position = computerVision.calculate_center_of_image(image)
+
+    computerVision.put_text_to_image(image, '+', position, 3, (0, 0, 255))
+
+    position = computerVision.calculate_center_of_face()
+
+    computerVision.put_text_to_image(image, '+', position, 4, (255, 0, 0))
+
+    movement = computerVision.calculate_movement()
+    print(movement)
+
     computerVision.show_image(image)
 
     is_processing = computerVision.verify_processing()

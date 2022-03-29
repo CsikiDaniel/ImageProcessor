@@ -7,8 +7,19 @@ def convert_color(img):
     return img
 
 
+movement = 'undefined'
+
+
 class ComputerVision:
     def __init__(self, camera_selection):
+
+        self.position = None
+        self.h = None
+        self.w = None
+        self.y = None
+        self.x = None
+        self.center_y = None
+        self.center_x = None
         self.mask = None
         self.capture = cv2.VideoCapture(camera_selection, cv2.CAP_DSHOW)
 
@@ -32,10 +43,9 @@ class ComputerVision:
         for contour in contours:
             area = cv2.contourArea(contour)
             if area > 8000:
-                x, y, w, h = cv2.boundingRect(contour)
-                img = cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2, 1)
+                self.x, self.y, self.w, self.h = cv2.boundingRect(contour)
+                img = cv2.rectangle(img, (self.x, self.y), (self.x + self.w, self.y + self.h), (0, 255, 0), 2, 1)
         return img
-
 
     def show_image(self, img):
         cv2.imshow('Image', img)
@@ -47,5 +57,47 @@ class ComputerVision:
             is_processing = True
         return is_processing
 
+    def calculate_center_of_image(self, img):
+        height, width, chanel = img.shape
+        self.center_x = int(width / 2) - 15
+        self.center_y = int(height / 2) + 15
+        position = (self.center_x, self.center_y)
+        return position
 
+    def calculate_center_of_face(self):
+        center_x = int(self.x + self.w / 2 - 20)
+        center_y = int(self.y + self.h / 2 + 12)
+        position = (center_x, center_y)
+        return position
 
+    def calculate_movement(self):
+
+        movement = ''
+        if (int(self.x + self.w / 2 - 20)) < self.center_x - 50:
+            #print('left')
+            movement += '1'
+        else:
+            movement += '0'
+
+        if (int(self.x + self.w / 2 - 20)) > self.center_x + 50:
+            #print('right')
+            movement += '1'
+        else:
+            movement += '0'
+
+        if (int(self.y + self.h / 2 + 12)) < self.center_y - 50:
+            #print('up')
+            movement += '1'
+        else:
+            movement += '0'
+
+        if (int(self.y + self.h / 2 + 12)) > self.center_y + 50:
+            #print('down')
+            movement += '1'
+        else:
+            movement += '0'
+
+        return movement
+
+    def put_text_to_image(self, img, text, position, size, color):
+        cv2.putText(img, str(text), position, cv2.FONT_HERSHEY_PLAIN, int(size), color, 2)

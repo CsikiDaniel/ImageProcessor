@@ -1,11 +1,14 @@
 from computer_vision import ComputerVision, convert_color
 from face_detector import FaceDetector
+from communication import RaspberryCommunication
 
 computerVision = ComputerVision(0)
 
 faceDetection = FaceDetector(thickness=7,
                              circle_radius=7,
                              max_number_of_faces=1)
+
+raspberryCommunication = RaspberryCommunication('172.20.10.9', 9527)
 
 is_processing = True
 
@@ -30,6 +33,7 @@ while is_processing:
 
     movement = computerVision.calculate_movement()
     print(movement)
+    raspberryCommunication.send(movement)
 
     computerVision.show_image(image)
 

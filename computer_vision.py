@@ -7,9 +7,6 @@ def convert_color(img):
     return img
 
 
-movement = 'undefined'
-
-
 class ComputerVision:
     def __init__(self, camera_selection):
 

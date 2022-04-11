@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- created a communication channel with Raspberry via TCP">
+    <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- send movement direction to raspberry, receive decoded data on Rpi">
+      <change afterPath="$PROJECT_DIR$/communication_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648725087077</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- send movement direction to raspberry, receive decoded data on Rpi">
+      <created>1648749587376</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648749587376</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +181,7 @@
     <MESSAGE value="- face detecting, image processing module added." />
     <MESSAGE value="- face movement calculation method added" />
     <MESSAGE value="- created a communication channel with Raspberry via TCP" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created a communication channel with Raspberry via TCP" />
+    <MESSAGE value="- send movement direction to raspberry, receive decoded data on Rpi" />
+    <option name="LAST_COMMIT_MESSAGE" value="- send movement direction to raspberry, receive decoded data on Rpi" />
   </component>
 </project>

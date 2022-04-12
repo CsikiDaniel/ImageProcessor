@@ -33,6 +33,7 @@ while is_processing:
 
     movement = computerVision.calculate_movement()
     print(movement)
+
     raspberryCommunication.send(movement)
 
     computerVision.show_image(image)

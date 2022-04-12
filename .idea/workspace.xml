@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- pytest package downloaded">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communication.py" beforeDir="false" afterPath="$PROJECT_DIR$/communication.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/communication_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/communication_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_vision.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_vision.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +66,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="exceleditor.install" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in communication_test.py">
+  <component name="RunManager" selected="Python.main">
     <configuration name="bluetooth" type="PythonConfigurationType" factoryName="Python">
       <module name="ImageProcessor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,6 +84,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="D:\Dániel\Egyetem\IV év II félév\Allamvizsga\ImageProcessor\communication.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="communication_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ImageProcessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/communication_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,11 +173,11 @@
       <item itemvalue="Python.bluetooth" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.server" />
-      <item itemvalue="Python tests.Python tests in communication_test.py" />
+      <item itemvalue="Python.communication_test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in communication_test.py" />
+        <item itemvalue="Python.communication_test" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +244,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- face detecting, image processing module added." />
@@ -210,5 +253,47 @@
     <MESSAGE value="- send movement direction to raspberry, receive decoded data on Rpi" />
     <MESSAGE value="- pytest package downloaded" />
     <option name="LAST_COMMIT_MESSAGE" value="- pytest package downloaded" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="166" key="#Plugins" timestamp="1649763077446">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1649763077446" />
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1649763711137">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1649763711137" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1649763711137">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1649763711137" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1649763711137">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1649763711137" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1649763711137">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1649763711137" />
+    <state width="1899" height="352" key="GridCell.Tab.1.bottom" timestamp="1649763494930">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1649763494930" />
+    <state width="1899" height="352" key="GridCell.Tab.1.center" timestamp="1649763494929">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1649763494929" />
+    <state width="1899" height="352" key="GridCell.Tab.1.left" timestamp="1649763494929">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1649763494929" />
+    <state width="1899" height="352" key="GridCell.Tab.1.right" timestamp="1649763494930">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1899" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1649763494930" />
+    <state x="540" y="260" key="IDE.errors.dialog" timestamp="1649763117114">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="540" y="260" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1649763117114" />
   </component>
 </project>

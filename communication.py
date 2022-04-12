@@ -10,6 +10,10 @@ class RaspberryCommunication:
 
     def send(self, movement):
         self.s.send(bytes(movement, 'UTF-8'))
-        #time.sleep(0.1)
+        # time.sleep(0.1)
         if not movement:
             self.s.close()
+
+    def recive(self):
+        recived_data = self.s.recv(1024)
+        return recived_data

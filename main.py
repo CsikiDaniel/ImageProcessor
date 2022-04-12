@@ -8,7 +8,7 @@ faceDetection = FaceDetector(thickness=7,
                              circle_radius=7,
                              max_number_of_faces=1)
 
-raspberryCommunication = RaspberryCommunication('127.0.0.1', 9527)
+raspberryCommunication = RaspberryCommunication('192.168.1.162', 9527)
 #192.168.1.5
 is_processing = True
 

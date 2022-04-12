@@ -18,6 +18,7 @@ class ComputerVision:
         self.center_y = None
         self.center_x = None
         self.mask = None
+        self.contours = None
         self.capture = cv2.VideoCapture(camera_selection, cv2.CAP_DSHOW)
 
     def read_capture(self):
@@ -36,8 +37,8 @@ class ComputerVision:
         return img
 
     def find_contours(self, img):
-        (contours, hierarchy) = cv2.findContours(self.mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-        for contour in contours:
+        ( self.contours, hierarchy) = cv2.findContours(self.mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        for contour in  self.contours:
             area = cv2.contourArea(contour)
             if area > 8000:
                 self.x, self.y, self.w, self.h = cv2.boundingRect(contour)
@@ -69,30 +70,34 @@ class ComputerVision:
 
     def calculate_movement(self):
 
-        movement = ''
-        if (int(self.x + self.w / 2 - 20)) < self.center_x - 50:
-            #print('left')
-            movement += '1'
-        else:
-            movement += '0'
+        if self.contours:
 
-        if (int(self.x + self.w / 2 - 20)) > self.center_x + 50:
-            #print('right')
-            movement += '1'
-        else:
-            movement += '0'
+            movement = ''
+            if (int(self.x + self.w / 2 - 20)) < self.center_x - 50:
+                #print('left')
+                movement += '1'
+            else:
+                movement += '0'
 
-        if (int(self.y + self.h / 2 + 12)) < self.center_y - 50:
-            #print('up')
-            movement += '1'
-        else:
-            movement += '0'
+            if (int(self.x + self.w / 2 - 20)) > self.center_x + 50:
+                #print('right')
+                movement += '1'
+            else:
+                movement += '0'
 
-        if (int(self.y + self.h / 2 + 12)) > self.center_y + 50:
-            #print('down')
-            movement += '1'
+            if (int(self.y + self.h / 2 + 12)) < self.center_y - 50:
+                #print('up')
+                movement += '1'
+            else:
+                movement += '0'
+
+            if (int(self.y + self.h / 2 + 12)) > self.center_y + 50:
+                #print('down')
+                movement += '1'
+            else:
+                movement += '0'
         else:
-            movement += '0'
+            movement = '0000'
 
         return movement
 

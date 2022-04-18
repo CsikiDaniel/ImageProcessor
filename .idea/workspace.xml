@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- communication_test file created, first test">
-      <change afterPath="$PROJECT_DIR$/test_images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_images/6.png" afterDir="false" />
+    <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- sending time and find face tests added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/communication.py" beforeDir="false" afterPath="$PROJECT_DIR$/communication.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/communication_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/communication_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_vision.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_vision.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_images/6.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649749186698</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- sending time and find face tests added">
+      <created>1650273269450</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650273269450</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +226,7 @@
     <MESSAGE value="- send movement direction to raspberry, receive decoded data on Rpi" />
     <MESSAGE value="- pytest package downloaded" />
     <MESSAGE value="- communication_test file created, first test" />
-    <option name="LAST_COMMIT_MESSAGE" value="- communication_test file created, first test" />
+    <MESSAGE value="- sending time and find face tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- sending time and find face tests added" />
   </component>
 </project>

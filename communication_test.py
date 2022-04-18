@@ -43,14 +43,12 @@ def load_images_from_folder(folder):
 
 def test_find_face():
     face_detector = FaceDetector(7, 7, 1)
-    images = load_images_from_folder('test_images')
+    images = load_images_from_folder('test_face_images')
     face_counter = 0
+    computerVision = ComputerVision()
 
     for image in images:
         img = face_detector.draw_mesh(image)
-
-        computerVision = ComputerVision()
-
         image_rgb = computer_vision.convert_color(img)
         img = computerVision.process_image(img, image_rgb)
         img, contour_is_found = computerVision.find_contours(img)
@@ -60,3 +58,18 @@ def test_find_face():
     assert face_counter == len(images)
 
 
+def test_dont_find_face():
+    face_detector = FaceDetector(7, 7, 1)
+    images = load_images_from_folder('test_not_face_images')
+    face_counter = 0
+    computerVision = ComputerVision()
+
+    for image in images:
+        img = face_detector.draw_mesh(image)
+        image_rgb = computer_vision.convert_color(img)
+        img = computerVision.process_image(img, image_rgb)
+        img, contour_is_found = computerVision.find_contours(img)
+        if contour_is_found:
+            face_counter += 1
+
+    assert face_counter == 0

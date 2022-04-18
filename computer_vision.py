@@ -8,8 +8,9 @@ def convert_color(img):
 
 
 class ComputerVision:
-    def __init__(self, camera_selection):
+    def __init__(self, camera_selection=None):
 
+        self.contour_is_found = None
         self.position = None
         self.h = None
         self.w = None
@@ -19,7 +20,8 @@ class ComputerVision:
         self.center_x = None
         self.mask = None
         self.contours = None
-        self.capture = cv2.VideoCapture(camera_selection, cv2.CAP_DSHOW)
+        if camera_selection:
+            self.capture = cv2.VideoCapture(camera_selection, cv2.CAP_DSHOW)
 
     def read_capture(self):
         success, img = self.capture.read()
@@ -38,12 +40,15 @@ class ComputerVision:
 
     def find_contours(self, img):
         ( self.contours, hierarchy) = cv2.findContours(self.mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        self.contour_is_found = False
         for contour in  self.contours:
             area = cv2.contourArea(contour)
             if area > 8000:
                 self.x, self.y, self.w, self.h = cv2.boundingRect(contour)
                 img = cv2.rectangle(img, (self.x, self.y), (self.x + self.w, self.y + self.h), (0, 255, 0), 2, 1)
-        return img
+                self.contour_is_found = True
+
+        return img, self.contour_is_found
 
     def show_image(self, img):
         cv2.imshow('Image', img)

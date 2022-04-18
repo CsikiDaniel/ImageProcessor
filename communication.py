@@ -5,8 +5,10 @@ import time
 class RaspberryCommunication:
 
     def __init__(self, ip_address, port):
+        self.timeout = 1
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.s.connect((str(ip_address), int(port)))
+        self.s.settimeout(self.timeout)
 
     def send(self, movement):
         self.s.send(bytes(movement, 'UTF-8'))
@@ -16,4 +18,4 @@ class RaspberryCommunication:
 
     def recive(self):
         recived_data = self.s.recv(1024)
-        return recived_data
+        return recived_data.decode()

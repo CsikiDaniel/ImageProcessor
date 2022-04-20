@@ -8,7 +8,7 @@ faceDetection = FaceDetector(thickness=7,
                              circle_radius=7,
                              max_number_of_faces=1)
 
-raspberryCommunication = RaspberryCommunication('192.168.1.9', 9527)
+raspberryCommunication = RaspberryCommunication('192.168.1.12', 9527)
 #192.168.1.5
 is_processing = True
 
@@ -21,7 +21,7 @@ while is_processing:
 
     image = computerVision.process_image(image, image_rgb)
 
-    image = computerVision.find_contours(image)
+    image, contour_is_found = computerVision.find_contours(image)
 
     position = computerVision.calculate_center_of_image(image)
 

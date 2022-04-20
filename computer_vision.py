@@ -8,7 +8,7 @@ def convert_color(img):
 
 
 class ComputerVision:
-    def __init__(self, camera_selection=None):
+    def __init__(self, camera_selection):
 
         self.contour_is_found = None
         self.position = None
@@ -20,8 +20,7 @@ class ComputerVision:
         self.center_x = None
         self.mask = None
         self.contours = None
-        if camera_selection:
-            self.capture = cv2.VideoCapture(camera_selection, cv2.CAP_DSHOW)
+        self.capture = cv2.VideoCapture(camera_selection, cv2.CAP_DSHOW)
 
     def read_capture(self):
         success, img = self.capture.read()

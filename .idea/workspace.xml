@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- don't find face test added">
+    <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- changes in main">
+      <change afterPath="$PROJECT_DIR$/vv_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communication_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/communication_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_vision.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_vision.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
@@ -31,6 +33,11 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/computer_vision.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/server.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,27 +58,6 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="bluetooth" type="PythonConfigurationType" factoryName="Python">
-      <module name="ImageProcessor" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\csiki\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Dániel\Egyetem\IV év II félév\Allamvizsga\ImageProcessor\communication.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="ImageProcessor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,7 +115,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.bluetooth" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.server" />
       <item itemvalue="Python tests.Python tests in communication_test.py" />
@@ -205,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650276936674</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- changes in main">
+      <created>1650433937140</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650433937140</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +226,7 @@
     <MESSAGE value="- communication_test file created, first test" />
     <MESSAGE value="- sending time and find face tests added" />
     <MESSAGE value="- don't find face test added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- don't find face test added" />
+    <MESSAGE value="- changes in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changes in main" />
   </component>
 </project>

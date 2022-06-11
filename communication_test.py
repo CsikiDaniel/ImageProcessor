@@ -8,7 +8,7 @@ import os
 import time
 import cv2
 
-ip_address = '192.168.1.9'
+ip_address = '172.20.10.9'
 port = 9527
 
 
@@ -45,7 +45,7 @@ def test_find_face():
     face_detector = FaceDetector(7, 7, 1)
     images = load_images_from_folder('test_face_images')
     face_counter = 0
-    computerVision = ComputerVision()
+    computerVision = ComputerVision(0)
 
     for image in images:
         img = face_detector.draw_mesh(image)
@@ -62,7 +62,7 @@ def test_dont_find_face():
     face_detector = FaceDetector(7, 7, 1)
     images = load_images_from_folder('test_not_face_images')
     face_counter = 0
-    computerVision = ComputerVision()
+    computerVision = ComputerVision(0)
 
     for image in images:
         img = face_detector.draw_mesh(image)

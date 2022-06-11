@@ -8,8 +8,9 @@ def convert_color(img):
 
 
 class ComputerVision:
-    def __init__(self, camera_selection):
 
+    def __init__(self, camera_selection):
+        self.capture = cv2.VideoCapture(camera_selection, cv2.CAP_DSHOW)
         self.contour_is_found = None
         self.position = None
         self.h = None
@@ -20,7 +21,6 @@ class ComputerVision:
         self.center_x = None
         self.mask = None
         self.contours = None
-        self.capture = cv2.VideoCapture(camera_selection, cv2.CAP_DSHOW)
 
     def read_capture(self):
         success, img = self.capture.read()
@@ -38,11 +38,11 @@ class ComputerVision:
         return img
 
     def find_contours(self, img):
-        ( self.contours, hierarchy) = cv2.findContours(self.mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        (self.contours, hierarchy) = cv2.findContours(self.mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         self.contour_is_found = False
-        for contour in  self.contours:
+        for contour in self.contours:
             area = cv2.contourArea(contour)
-            if area > 8000:
+            if area > 7000:
                 self.x, self.y, self.w, self.h = cv2.boundingRect(contour)
                 img = cv2.rectangle(img, (self.x, self.y), (self.x + self.w, self.y + self.h), (0, 255, 0), 2, 1)
                 self.contour_is_found = True
@@ -72,31 +72,31 @@ class ComputerVision:
         position = (center_x, center_y)
         return position
 
-    def calculate_movement(self):
+    def calculate_movement(self, threshold):
 
         if self.contours:
 
             movement = ''
-            if (int(self.x + self.w / 2 - 20)) < self.center_x - 50:
-                #print('left')
+            if (int(self.x + self.w / 2 - 20)) < self.center_x - threshold:
+                # print('left')
                 movement += '1'
             else:
                 movement += '0'
 
-            if (int(self.x + self.w / 2 - 20)) > self.center_x + 50:
-                #print('right')
+            if (int(self.x + self.w / 2 - 20)) > self.center_x + threshold:
+                # print('right')
                 movement += '1'
             else:
                 movement += '0'
 
-            if (int(self.y + self.h / 2 + 12)) < self.center_y - 50:
-                #print('up')
+            if (int(self.y + self.h / 2 + 12)) < self.center_y - threshold:
+                # print('up')
                 movement += '1'
             else:
                 movement += '0'
 
-            if (int(self.y + self.h / 2 + 12)) > self.center_y + 50:
-                #print('down')
+            if (int(self.y + self.h / 2 + 12)) > self.center_y + threshold:
+                # print('down')
                 movement += '1'
             else:
                 movement += '0'

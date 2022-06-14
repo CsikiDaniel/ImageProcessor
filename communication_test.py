@@ -16,7 +16,7 @@ def test_echo():
     raspberry_communication = RaspberryCommunication(ip_address, port)
     sended_data = "Hello World!"
     raspberry_communication.send(sended_data)
-    recived_data = raspberry_communication.recive()
+    recived_data = raspberry_communication.receive()
     assert sended_data == recived_data
 
 
@@ -25,7 +25,7 @@ def test_sending_time():
     sending_data = 'Hello World!'
     start_time = time.time()
     raspberry_communication.send(sending_data)
-    reciving_data = raspberry_communication.recive()
+    reciving_data = raspberry_communication.receive()
     end_time = time.time()
     delta_time = end_time - start_time
     print(delta_time)

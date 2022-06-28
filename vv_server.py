@@ -3,7 +3,7 @@ import socket
 backlog = 5
 size = 1024
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(('192.168.1.9', 9527))
+s.bind(('127.0.0.1', 9527))
 s.listen(backlog)
 try:
     while True:

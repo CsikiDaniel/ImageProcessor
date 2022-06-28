@@ -64,39 +64,38 @@ class ComputerVision:
         self.center_x = int(width / 2) - 15
         self.center_y = int(height / 2) + 15
         position = (self.center_x, self.center_y)
-        return position
+        return position, self.center_x, self.center_y
 
     def calculate_center_of_face(self):
         center_x = int(self.x + self.w / 2 - 20)
         center_y = int(self.y + self.h / 2 + 12)
         position = (center_x, center_y)
-        return position
+        return position, center_x, center_y
 
     def calculate_movement(self, threshold):
 
         if self.contours:
-
             movement = ''
             if (int(self.x + self.w / 2 - 20)) < self.center_x - threshold:
-                # print('left')
+                # ('left')
                 movement += '1'
             else:
                 movement += '0'
 
             if (int(self.x + self.w / 2 - 20)) > self.center_x + threshold:
-                # print('right')
+                # ('right')
                 movement += '1'
             else:
                 movement += '0'
 
             if (int(self.y + self.h / 2 + 12)) < self.center_y - threshold:
-                # print('up')
+                # ('up')
                 movement += '1'
             else:
                 movement += '0'
 
             if (int(self.y + self.h / 2 + 12)) > self.center_y + threshold:
-                # print('down')
+                # ('down')
                 movement += '1'
             else:
                 movement += '0'

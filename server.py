@@ -10,8 +10,9 @@ s.listen(backlog)
 
 # Setup Robot
 GPIO.setmode(GPIO.BCM)
-delay = 0.000195  # in 16-th step
-steps = 150
+delay = 0.000657630  # in 16-th step
+steps = 100
+GPIO.setwarnings(False)
 
 # Motor 1 - Horizontal motor
 Enable_M1 = 16
@@ -30,8 +31,9 @@ Enable_M2 = 14
 Direction_M2 = 15
 Step_M2 = 18
 
-up = 1
-down = 0
+up = 0
+down = 1
+
 
 GPIO.setup(Enable_M2, GPIO.OUT)
 GPIO.setup(Direction_M2, GPIO.OUT)
@@ -185,7 +187,6 @@ try:
 
         if len(data) == 4:
             decoded = data.decode('utf-8')
-            answer = ''
             if decoded == '1000':
                 move_left()
                 print('Left')

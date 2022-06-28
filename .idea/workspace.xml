@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- work with my robot">
-      <change afterPath="$PROJECT_DIR$/input_image.py" afterDir="false" />
+    <list default="true" id="50ea89d9-ae7e-48c2-a82a-8f071952444b" name="Changes" comment="- bugs fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/communication.py" beforeDir="false" afterPath="$PROJECT_DIR$/communication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/communication_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/communication_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communication_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_vision.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_vision.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/input_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vv_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/vv_server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +55,31 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/input_image.py" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/arrays.py" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.input_image">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="arrays" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ImageProcessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\csiki\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/arrays.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="input_image" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="ImageProcessor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,6 +143,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sinus_sign" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ImageProcessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\csiki\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Digitális jelfeldolgozás/Laborok/Digitalis_Jelfeldolgozas" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Digitális jelfeldolgozás/Laborok/Digitalis_Jelfeldolgozas/sinus_sign.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vv_server" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ImageProcessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\csiki\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vv_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in communication_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="ImageProcessor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,12 +201,16 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.vv_server" />
       <item itemvalue="Python.input_image" />
       <item itemvalue="Python.server" />
+      <item itemvalue="Python.arrays" />
+      <item itemvalue="Python.sinus_sign" />
       <item itemvalue="Python tests.Python tests in communication_test.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sinus_sign" />
         <item itemvalue="Python tests.Python tests in communication_test.py" />
       </list>
     </recent_temporary>
@@ -226,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654976585374</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- bugs fixed">
+      <created>1655226775101</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655226775101</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +332,7 @@
     <MESSAGE value="- don't find face test added" />
     <MESSAGE value="- changes in main" />
     <MESSAGE value="- work with my robot" />
-    <option name="LAST_COMMIT_MESSAGE" value="- work with my robot" />
+    <MESSAGE value="- bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="- bugs fixed" />
   </component>
 </project>
